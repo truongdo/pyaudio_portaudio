@@ -82,6 +82,10 @@ cd <Location of the repository>\pyaudio_portaudio\pyaudio
 python.exe .\setup.py install --static-link
 ```
 
+Truong comment:
+Copy file __portaudio-v19\build\msvc\Win32\Release\portaudio.dll__ or  __portaudio-v19\build\msvc\Win32\Release\portaudio_x86.dll__ to __pyaudio\build\lib.win32-3.7__
+and run `python.exe .\setup.py sdist bdist_wheel` to build .whl file for easy distribution.
+
 ## Microsoft Visual Studio (2017) - 32 bit
 
 ### For 32-bit support see instructions above and this issue: https://github.com/intxcc/pyaudio_portaudio/issues/8.
